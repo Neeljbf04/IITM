@@ -20,7 +20,7 @@ async def latency_metrics(request: Request):
     threshold = data.get("threshold_ms", 180)
 
     # Load telemetry data
-    with open("telemetry.json", "r") as f:
+    with open("q-vercel-latency.json", "r") as f:
         telemetry = json.load(f)
 
     response = {}
